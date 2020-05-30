@@ -1,3 +1,77 @@
-h2 {
-  color: red;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body{
+  background-image: url("img/marmo.jpg");
+  background-size: contain;
+  font-family: 'Lato', sans-serif;
+}
+.container{
+  text-align: center;
+  margin: 20px;
+}
+
+.container>img{
+  max-width: 35%;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow: 5px 10px 10px 1px rgba(255, 255, 255, 0.5);
+}
+
+#target{
+  text-align: left;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pagante {
+  width: calc(100% / 3 - 10px);
+  margin: 5px;
+  padding: 10px 15px;
+  background: rgba(255, 255, 255, 0.95);
+  border: solid 1px rgba(251, 205, 210, 0.5);
+  border-radius: 4px;
+  box-shadow: 5px 1px 10px 1px rgba(251, 205, 210, 0.25);
+  position: relative;
+  transition-duration: 0.3s;
+}
+
+.pagante:hover {
+  transform: scale(1.05);
+}
+
+.pagante .indirizzo{
+  margin-bottom: 33px;
+}
+
+.pagante i{
+  position: absolute;
+  color: #1f3f5c;
+  top: 5px;
+  right: 5px;
+}
+
+.pagante .stacchetto {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+.stacchetto img{
+  max-width: 35px;
+}
+
+span {
+  font-weight: bold;
+}
+
+li {
+  display: inline-block;
 }

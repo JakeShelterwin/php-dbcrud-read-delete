@@ -15,7 +15,7 @@
     <body>
 
         <div class="container">
-            <h2>Lista Paganti</h2>
+            <img src="img/hotel-boolean.png" alt="">
             <ul id="target">
 
             </ul>
@@ -23,10 +23,11 @@
         <!-- TEMPLATE: PAGANTE -->
         <script id="templatePagante" type="text/x-handlebars-template">
           <li class="pagante" data-id="{{ id }}">
-            <span> {{name}}  </span>
-            <span> {{lastname}}  </span>
-            <span> {{address}} </span>
+            <div> <span>Nome:</span>   {{name}}  </div>
+            <div><span>Cognome: </span> {{lastname}}  </div>
+            <div class="indirizzo"> <span>Indirizzo: </span>{{address}} </div>
             <i class="delete fas fa-trash-alt"></i>
+            <div class="stacchetto"> <img src="img/stacchetto.png" alt=""> </div>
           </li>
         </script>
 
